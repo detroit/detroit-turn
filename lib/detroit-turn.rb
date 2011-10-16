@@ -50,6 +50,17 @@ module Detroit
     # In case you forget the 's'.
     alias_method :require=, :requires=
 
+
+    #  A S S E M B L Y  S T A T I O N S
+
+    #
+    def station_test
+      run
+    end
+
+
+    #  S E R V I C E  M E T H O D S
+
     #
     def logfile
       case log
@@ -65,7 +76,7 @@ module Detroit
       run_tests
     end
 
-    private
+  private
 
     # Setup default attribute values.
     def initialize_defaults
