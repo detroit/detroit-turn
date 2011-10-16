@@ -1,16 +1,23 @@
 ---
-name : detroit-turn
-title: Detroit Turn
-
-contact: trans <transfire@gmail.com>
+name    : detroit-turn
+title   : Detroit Turn
+version : 0.1.0
+summary : Turn plugin for Detroit
 
 description:
   Turn plugin for Detroit build system.
+  The Turn plugin runs MiniTest test
+  via Turn's beautified test runners.
 
 resources:
   home: http://detroit.github.com/
   code: http://github.com/detroit/detroit-turn
+  mail: http://groups.google.com/rubyworks-mailinglist
 
-copyright:
-  (c) 2011 Thomas Sawyer
+authors:
+  - T. Sawyer <transfire@gmail.com>
+
+copyrights:
+  - (c) 2011 Thomas Sawyer (GPL-3)
+
 
