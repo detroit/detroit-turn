@@ -37,6 +37,15 @@ A typical example would look something like:
       extra: '| tapout pretty'
 
 
+## RESOURCES
+
+For more information:
+
+  * [API Documentation](http://rubydoc.info/gems/detroit-turn)
+
+  * [Development Site](http://github.com/detroit/detroit-turn)
+
+
 ## COPYRIGHT
 
 Copyright (c) 2010 Thomas Sawyer, Rubyworks
