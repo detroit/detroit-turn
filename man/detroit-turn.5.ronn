@@ -1,0 +1,49 @@
+detroit-turn(5) - ruby minitest-based tests via turn with detroit
+=================================================================
+
+## DESCRIPTION
+
+Turn is a test runner tool you can use to run your Ruby MiniTest-based
+or Test::Unit-based tests during Detroit's standard test phase.
+
+
+## OPTIONS
+
+The following options can be used in the Detroit assembly file
+for defining a Turn service.
+
+  * `tests` - Test files to include.
+
+  * `exclude` - Files or globs to exclude.
+
+  * `ignore` - Files to ignore by matching filename.
+
+  * `loadpath` - Directories to add to`$LOAD_PATH`. Defaults to `['lib']`.
+
+  * `requires` - Scripts to require before running tests.
+
+  * `extra` - Extra command line options to append to command.
+
+
+## EXAMPLES
+
+A typical example would look something like:
+
+    turn:
+      tests: spec/*_spec.rb
+      loadpath:
+        - lib
+        - spec
+      extra: '| tapout pretty'
+
+
+## COPYRIGHT
+
+Copyright (c) 2010 Thomas Sawyer, Rubyworks
+
+Detroit Turn is distributable in accordance with the GPLv3 license.
+
+
+## SEE ALSO
+
+detroit(1), turn(1), ruby(1)

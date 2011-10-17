@@ -175,6 +175,13 @@ module Detroit
     def initialize_requires
       #require 'turn/command'
     end
+
+  public
+
+    def self.man_page
+      File.dirname(__FILE__)+'/../man/detroit-turn.5'
+    end
+
   end
 
 end

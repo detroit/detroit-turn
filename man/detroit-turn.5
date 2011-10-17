@@ -1,0 +1,60 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "DETROIT\-TURN" "5" "October 2011" "" ""
+.
+.SH "NAME"
+\fBdetroit\-turn\fR \- ruby minitest\-based tests via turn with detroit
+.
+.SH "DESCRIPTION"
+Turn is a test runner tool you can use to run your Ruby MiniTest\-based or Test::Unit\-based tests during Detroit\'s standard test phase\.
+.
+.SH "OPTIONS"
+The following options can be used in the Detroit assembly file for defining a Turn service\.
+.
+.IP "\(bu" 4
+\fBtests\fR \- Test files to include\.
+.
+.IP "\(bu" 4
+\fBexclude\fR \- Files or globs to exclude\.
+.
+.IP "\(bu" 4
+\fBignore\fR \- Files to ignore by matching filename\.
+.
+.IP "\(bu" 4
+\fBloadpath\fR \- Directories to add to\fB$LOAD_PATH\fR\. Defaults to \fB[\'lib\']\fR\.
+.
+.IP "\(bu" 4
+\fBrequires\fR \- Scripts to require before running tests\.
+.
+.IP "\(bu" 4
+\fBextra\fR \- Extra command line options to append to command\.
+.
+.IP "" 0
+.
+.SH "EXAMPLES"
+A typical example would look something like:
+.
+.IP "" 4
+.
+.nf
+
+turn:
+  tests: spec/*_spec\.rb
+  loadpath:
+    \- lib
+    \- spec
+  extra: \'| tapout pretty\'
+.
+.fi
+.
+.IP "" 0
+.
+.SH "COPYRIGHT"
+Copyright (c) 2010 Thomas Sawyer, Rubyworks
+.
+.P
+Detroit Turn is distributable in accordance with the GPLv3 license\.
+.
+.SH "SEE ALSO"
+detroit(1), turn(1), ruby(1)
