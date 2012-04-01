@@ -53,11 +53,22 @@ module Detroit
     alias_method :require=, :requires=
 
 
-    #  A S S E M B L Y  S T A T I O N S
+    #  A S S E M B L Y  M E T H O D S
 
     #
-    def station_test
-      run
+    def assemble?(station, options={})
+      case station
+      when :test
+        true
+      end
+    end
+
+    #
+    def assemble(station, options={})
+      case station
+      when :test
+        run
+      end
     end
 
 
