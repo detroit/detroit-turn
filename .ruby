@@ -26,7 +26,7 @@ revision: 0
 created: '2011-10-16'
 summary: Turn plugin for Detroit
 title: Detroit Turn
-version: 0.1.0
+version: 0.2.0
 name: detroit-turn
 suite: detroit
 description: Turn plugin for Detroit build system. The Turn plugin runs MiniTest test
