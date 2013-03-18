@@ -1,9 +1,7 @@
 #!mast .ruby bin lib man qed test [A-Z]*.*
-.ruby
 lib/detroit-turn.rb
 man/detroit-turn.5
 man/detroit-turn.5.html
 man/detroit-turn.5.ronn
-LICENSE.txt
-README.rdoc
-COPYING.rdoc
+COPYING.md
+README.md
