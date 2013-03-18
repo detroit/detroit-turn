@@ -37,7 +37,7 @@ paths:
 created: '2011-10-16'
 summary: Turn plugin for Detroit
 title: Detroit Turn
-version: 0.2.0
+version: 0.2.1
 name: detroit-turn
 suite: detroit
 description: Turn plugin for Detroit build system. The Turn plugin runs MiniTest test
