@@ -1,4 +1,4 @@
-require 'detroit/tool'
+require 'detroit-standard'
 
 module Detroit
 
@@ -12,6 +12,9 @@ module Detroit
   #
   # NOTE: This tool currently shells out to the command line.
   class Turn < Tool
+
+    # Participates in the standard toolchian.
+    system :standard
 
     # Default test file patterns.
     DEFAULT_TESTS = ["test/**/test_*.rb", "test/**/*_test.rb" ]
